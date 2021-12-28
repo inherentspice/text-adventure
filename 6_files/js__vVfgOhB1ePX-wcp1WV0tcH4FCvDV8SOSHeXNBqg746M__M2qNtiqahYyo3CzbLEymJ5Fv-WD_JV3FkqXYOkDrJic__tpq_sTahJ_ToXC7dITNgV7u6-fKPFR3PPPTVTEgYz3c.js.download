@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at https://d31u95r9ywbjex.cloudfront.net/sites/all/modules/contrib/lazy/lazy.js. */
+(function($){'use strict';Drupal.behaviors.lazy={attach:function(context,settings){var options=settings.lazy?settings.lazy:{};Drupal.lazy=new Blazy(options)}}})(jQuery);;
+/* Source and licensing information for the above line(s) can be found at https://d31u95r9ywbjex.cloudfront.net/sites/all/modules/contrib/lazy/lazy.js. */
+;/*})'"*/

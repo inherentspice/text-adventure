@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at https://d31u95r9ywbjex.cloudfront.net/sites/all/themes/bootstrap_truity/javascripts/personality-test-page.js. */
+(function($){Drupal.behaviors.scrollToTest={attach:function(context){$('.page-header-button',context).once('scroll-to-test',function(){$(this).on('click',function(e){e.preventDefault();var $form_top_element=$('.question-header');if($form_top_element.length==0)$form_top_element=$('.form-item','form.webform-client-form').first();if($form_top_element.length>0)$('html').animate({scrollTop:$form_top_element.offset().top},300)})})}}})(jQuery);;
+/* Source and licensing information for the above line(s) can be found at https://d31u95r9ywbjex.cloudfront.net/sites/all/themes/bootstrap_truity/javascripts/personality-test-page.js. */
+;/*})'"*/

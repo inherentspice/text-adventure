@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at https://d31u95r9ywbjex.cloudfront.net/sites/all/themes/bootstrap/js/modules/views/js/ajax_view.js. */
+(function($){Drupal.views.ajaxView.prototype.attachPagerAjax=function(){this.$view.find('ul.pager > li > a, th.views-field a, .attachment .views-summary a, ul.pagination li a').each(jQuery.proxy(this.attachPagerLinkAjax,this))}})(jQuery);;
+/* Source and licensing information for the above line(s) can be found at https://d31u95r9ywbjex.cloudfront.net/sites/all/themes/bootstrap/js/modules/views/js/ajax_view.js. */
+;/*})'"*/

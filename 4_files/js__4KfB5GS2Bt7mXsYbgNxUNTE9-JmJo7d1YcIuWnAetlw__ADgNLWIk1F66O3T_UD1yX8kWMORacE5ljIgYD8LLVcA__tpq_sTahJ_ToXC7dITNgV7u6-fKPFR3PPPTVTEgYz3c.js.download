@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at https://d31u95r9ywbjex.cloudfront.net/sites/all/modules/custom/truity_custom/truity_custom.js. */
+(function($){Drupal.behaviors.hybridAuthFix={attach:function(context){$('a.hybridauth-widget-provider',context).each(function(){url=$(this).attr('href');url=url.substring(0,url.indexOf('?'));$(this).attr('href',url+'?destination=user/login&destination_error=user/login')})}}})(jQuery);;
+/* Source and licensing information for the above line(s) can be found at https://d31u95r9ywbjex.cloudfront.net/sites/all/modules/custom/truity_custom/truity_custom.js. */
+;/*})'"*/
