@@ -19,7 +19,6 @@ with open("five_options_questions.csv", "w") as external_file:
             else:
                 pass
 
-<<<<<<< HEAD
 #scraping rest of the pages through saving locally
 def get_questions(filename,docname):
     with open(filename) as fp:
@@ -48,7 +47,6 @@ with open("choose_one.csv", "w") as external_file:
         for child in set(span.children):
             if len(child.get_text())>2:
                 print(str(child.get_text().strip("*")),file=external_file)
-=======
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -86,4 +84,3 @@ def get_top_n_words(text, n=None):
 common_words = get_top_n_words(text, 20)
 for word, freq in common_words:
     print(word, freq)
->>>>>>> 487be1ac172d77b41ba37deb811ad610f835f777
