@@ -1,4 +1,5 @@
 # import libraries
+import sklearn
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -46,5 +47,7 @@ def get_top_n_words(text, n=None):
 # call function
 # change number to however many words you want to see
 common_words = get_top_n_words(text, 15)
-for word, freq in common_words:
-    print(word, freq)
+with open('top_n_words.csv','w') as external_file:
+    for word, freq in common_words:
+        print((word, freq),file=external_file)
+external_file.close
