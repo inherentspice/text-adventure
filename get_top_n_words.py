@@ -6,18 +6,24 @@ import csv
 
 # preprocess csv
 rows = []
+rows_one = []
 with open('five_options_questions.csv', 'r') as file:
     csvreader = csv.reader(file)
     for row in csvreader:
         rows.append(row)
-
+with open('choose_one.csv', 'r') as file_one:
+    csvreader_one = csv.reader(file_one)
+    for row_one in csvreader_one:
+        rows.append(row_one)
 
 # load text that you want to count word frequencies
 text = ''
 for i in rows:
     for char in i:
         text += char
-
+for j in rows_one:
+    for c in j:
+        text += c
 # function that tokenizes, removes stop words, vectorizers, and counts the most common words
 def get_top_n_words(text, n=None):
     """
@@ -46,6 +52,8 @@ def get_top_n_words(text, n=None):
 # call function
 # change number to however many words you want to see
 common_words = get_top_n_words(text, 15)
+
+# create csv file
 with open('top_n_words.csv', 'w') as external_file:
     for word, freq in common_words:
         print((word, freq), file=external_file)
