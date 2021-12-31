@@ -1,11 +1,10 @@
 # import libraries
-import sklearn
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import csv
 
-#preprocess csv
+# preprocess csv
 rows = []
 with open('five_options_questions.csv', 'r') as file:
     csvreader = csv.reader(file)
@@ -13,7 +12,7 @@ with open('five_options_questions.csv', 'r') as file:
         rows.append(row)
 
 
-#load text that you want to count word frequencies
+# load text that you want to count word frequencies
 text = ''
 for i in rows:
     for char in i:
@@ -47,7 +46,7 @@ def get_top_n_words(text, n=None):
 # call function
 # change number to however many words you want to see
 common_words = get_top_n_words(text, 15)
-with open('top_n_words.csv','w') as external_file:
+with open('top_n_words.csv', 'w') as external_file:
     for word, freq in common_words:
-        print((word, freq),file=external_file)
+        print((word, freq), file=external_file)
 external_file.close
