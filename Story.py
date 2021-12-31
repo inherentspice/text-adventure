@@ -8,3 +8,8 @@ if beginning == 'Yes'.lower().strip():
     print('k')
 else:
     print('You coward. Come back later.')
+
+'''
+1. In front of you are doors to two rooms. The room on the left is full of people. They seem to be enjoying themselves, talking and laughing. The room on your right has no one else in it, but it is cozy and nicely decorated. There are plenty of food and drinks you can help yourself to and some books for you to read. Which way do you go?
+2. 
+'''
