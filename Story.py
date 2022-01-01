@@ -79,10 +79,14 @@ You sit in a comfy chair. Pick up a book by Stephen Hawking. As you crack the sp
 70: right => voice - ignore or follow
 '''
 dict = {100:'Would you like to explore the inner reaches of your mind? (type 50 for yes/ type 101 for no)',
-        101: 'You coward. COme back later',
+        101: 'You coward. Come back later',
         50: 'In front of you are doors to two rooms. The room on the left is full of chatting people. The room on your right is empty and has food and drinks, and a library of for you to read. Which way do you go? (type 25 for left/ type 70 for right)',
-        25: 'The faces of the people shift and shimmer in the light. You recognize them. Work friends. Do you discuss managements\' new policy on water bottles in the work space or the weather? (water/weather)',
-        70: 'You sit in a comfy chair. Pick up a book by Stephen Hawking. As you crack the spine, a voice whispers to you, \'Come over to the mirror.\' What do you do? (ignore/follow)' }
+        25: 'The faces of the people shift and shimmer in the light. You recognize them. Work friends. Do you discuss managements\' new policy on water bottles in the work space or the weather? (choose 99/98)',
+        70: 'You sit in a comfy chair. Pick up a book by Stephen Hawking. As you crack the spine, a voice whispers to you, \'Come over to the mirror.\' What do you do? (choose 97/96)',
+        99: 'filler_text',
+        98: 'filler_text',
+        97: 'filler_text',
+        96: 'filler_text'}
 
 
 try:
@@ -106,11 +110,12 @@ def proceed(beginning, value1,value2):
             return result
         assert int(beginning) == value1 or int(beginning) == value2
     except AssertionError:
-        print('please put in only either '+value1+' or '+value2)
+        print('please put in only either '+str(value1)+' or ' + str(value2))
 
 beginning = proceed(beginning,50,101)
-proceed(beginning,25,70)
-
+beginning = proceed(beginning,25,70)
+beginning = proceed(beginning,99,98)
+beginning = proceed(beginning,97,96)
 
 
 
