@@ -81,12 +81,11 @@ You sit in a comfy chair. Pick up a book by Stephen Hawking. As you crack the sp
 dict = {100:'Would you like to explore the inner reaches of your mind? (type 50 for yes/ type 101 for no)',
         101: 'You coward. Come back later',
         50: 'In front of you are doors to two rooms. The room on the left is full of chatting people. The room on your right is empty and has food and drinks, and a library of for you to read. Which way do you go? (type 25 for left/ type 70 for right)',
-        25: 'The faces of the people shift and shimmer in the light. You recognize them. Work friends. Do you discuss managements\' new policy on water bottles in the work space or the weather? (choose 99/98)',
+        25: 'The faces of the people shift and shimmer in the light. You recognize them. Work friends. Do you discuss managements\' new policy on water bottles in the work space or the weather? (type 2 for water bottles/type 24 for weather',
         70: 'You sit in a comfy chair. Pick up a book by Stephen Hawking. As you crack the spine, a voice whispers to you, \'Come over to the mirror.\' What do you do? (choose 97/96)',
-        99: 'filler_text',
-        98: 'filler_text',
-        97: 'filler_text',
-        96: 'filler_text'}
+        2: '“Jameson reamed me out on Friday,” you say. “Can’t believe they’ll only let us drink during break.” Silence falls over the group. Fingers fidget, legs shift. Finally, Max, speaks: “Yeah, well, I guess it all comes down to how important it is to you.” (type 4 for not important/ type 22 for important)',
+        4: 'You laugh. “Haha.” Your laugh is not your own. It’s a stranger’s laugh, in a stranger’s life, among people whose faces you don’t care for. “I guess it doesn’t matter.” You look down at your watch. “Jeez, look at the time!” (type 6 for go home to partner/ type 20 for go to bar)',
+        6: 'Bed envelops you. Partner has eyes, face. Recognizable, comfortable. They are warm. You are warm with them. You are safe.'}
 
 
 try:
@@ -114,8 +113,8 @@ def proceed(beginning, value1,value2):
 
 beginning = proceed(beginning,50,101)
 beginning = proceed(beginning,25,70)
-beginning = proceed(beginning,99,98)
-beginning = proceed(beginning,97,96)
+beginning = proceed(beginning,2,24)
+beginning = proceed(beginning,4,22)
 
 
 
