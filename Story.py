@@ -84,6 +84,9 @@ dict = {100:'Would you like to explore the inner reaches of your mind? (type 50 
         25: 'The faces of the people shift and shimmer in the light. You recognize them. Work friends. Do you discuss managements\' new policy on water bottles in the work space or the weather? (type 2 for water bottles/type 24 for weather',
         70: 'You sit in a comfy chair. Pick up a book by Stephen Hawking. As you crack the spine, a voice whispers to you, \'Come over to the mirror.\' What do you do? (choose 97/96)',
         2: '“Jameson reamed me out on Friday,” you say. “Can’t believe they’ll only let us drink during break.” Silence falls over the group. Fingers fidget, legs shift. Finally, Max, speaks: “Yeah, well, I guess it all comes down to how important it is to you.” (type 4 for not important/ type 22 for important)',
+        24: '“Some weather we’ve been having, huh?” The circle grows to accept you. “Oh, man,” someone says. “For sure.” Max, a barrel-chested lad out of accounting, looks you in the eyes and says: “You follow the football? Catch that game last night?” (type 1 to lie/type 23 to admit you didn’t)',
+        1: 'It’s Saturday. You’re in the cold. Gloves. Scarf. But the wind cuts through. It’s half-time at the game. Max is in the bathroom. When he showed you the tickets, you didn’t know. You’re holding a hot-dog. A sliver of ketchup runs down your thumb. (type 3 to eat the hot-dog/type 21 to go home)',
+        23: 'filler',
         4: 'You laugh. “Haha.” Your laugh is not your own. It’s a stranger’s laugh, in a stranger’s life, among people whose faces you don’t care for. “I guess it doesn’t matter.” You look down at your watch. “Jeez, look at the time!” (type 6 for go home to partner/ type 20 for go to bar)',
         6: 'Bed envelops you. Partner has eyes, face. Recognizable, comfortable. They are warm. You are warm with them. You are safe.'}
 
@@ -114,12 +117,5 @@ def proceed(beginning, value1,value2):
 beginning = proceed(beginning,50,101)
 beginning = proceed(beginning,25,70)
 beginning = proceed(beginning,2,24)
+beginning = proceed(beginning,1,23)
 beginning = proceed(beginning,4,22)
-
-
-
-
-
-
-
-
